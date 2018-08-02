@@ -9,7 +9,12 @@ const routes: Routes = [  {
 {
   path: 'add-meals',
   loadChildren: './meals-form/meals-form.module#MealsFormModule'
-}];
+},
+{
+  path: 'AllMeals',
+  loadChildren: './all-meals/all-meals.module#AllMealsModule'
+}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { useHash: true })],

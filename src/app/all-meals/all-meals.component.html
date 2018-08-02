@@ -1,0 +1,46 @@
+
+<mat-card class="form-card">
+    <form class="example-form">
+      <mat-list>
+        <mat-list-item>
+        Dates   
+         <mat-form-field >
+            <input matInput value="10 days:Aug20- Aug29"  type="text">
+          </mat-form-field>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item> Preferred Menus
+        <mat-form-field >
+            <input matInput value="Egyptian,saudian,italian"  type="text">
+          </mat-form-field>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item> Max Meal Price 
+            <mat-form-field >
+                <input matInput value="s.r.25"  type="text">
+              </mat-form-field>
+            </mat-list-item>
+        <mat-list-item> Auto Plan        
+           <mat-form-field >
+            <input matInput value="50 new visitors!"  type="text">
+          </mat-form-field>
+        </mat-list-item>
+        <mat-list-item> Completed Meal          
+          <mat-form-field >
+            <input matInput value="1500 meals for 50 visitors"  type="text">
+          </mat-form-field>
+        </mat-list-item>
+      </mat-list>
+     </form>
+</mat-card>
+
+<mat-card class="form-card">
+  <mat-list>
+      <mat-list-item *ngFor="let persons of persons">
+          <mat-icon mat-list-icon>person</mat-icon>
+          <h4 mat-line>{{person}}</h4>
+          <p mat-line> {{folder.updated | date}} </p>
+        </mat-list-item>
+  </mat-list>
+
+</mat-card>
