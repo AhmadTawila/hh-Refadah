@@ -1,0 +1,80 @@
+<mat-card class="form-card">
+    <form class="form-group">
+      <mat-list>
+      <mat-list-item >
+          <mat-icon mat-list-icon>person</mat-icon>
+          <h4 mat-line  class="person-text">Mohammad Aboali</h4>
+          <p class="meals_number">0 / 30 meals</p>
+          
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item> 
+          <mat-icon mat-list-icon class="done-icon">done</mat-icon>
+          <p class="list-text">Preferred Menus</p>
+        <mat-form-field >
+            <input matInput value="Egyptian,saudian,italian"  type="text">
+          </mat-form-field>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item> 
+          <mat-icon mat-list-icon class="done-icon">done</mat-icon>
+          <p class="list-text">Max Meal Price </p>
+            <mat-form-field >
+                <input matInput value="s.r.25"  type="text">
+              </mat-form-field>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> 
+                <mat-icon mat-list-icon class="done-icon">done</mat-icon>
+                <p class="list-text">Allergies and Preferred Diet</p>
+                  <mat-form-field >
+                      <input matInput value="none"  type="text">
+                    </mat-form-field>
+                  </mat-list-item>
+                  <mat-divider></mat-divider>
+        
+        <mat-list-item> 
+          <mat-icon mat-list-icon class="done-icon"></mat-icon>
+          <p class="list-text">Auto Plan</p>       
+           <mat-form-field >
+            <input matInput value="50 new visitors!"  type="text">
+          </mat-form-field>
+        </mat-list-item>
+
+      </mat-list>
+     </form>
+</mat-card>
+<mat-accordion *ngFor="let day of days">
+    <mat-expansion-panel hideToggle="true" class="expansion-card"  (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+      <mat-expansion-panel-header class="panel-header">
+        <mat-panel-title class="panel-title">
+          {{day}}
+        </mat-panel-title>
+        <mat-panel-description class="panel-description">
+          0 / 3 meals
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-list>
+          <mat-list-item>
+             <p class="meal_name">Breakfast:</p> <span class="food_style">Falafel</span> <span class="food_style">Milk</span>
+             <span> <mat-icon mat-list-icon class="add-icon">add</mat-icon></span>
+             <p class="meal_price">S.R. 10</p>
+          </mat-list-item>
+
+      <mat-divider></mat-divider>
+
+          <mat-list-item>
+             <p class="meal_name">Launch:</p><span>  <mat-icon mat-list-icon class="add-icon">add</mat-icon></span>
+          </mat-list-item>
+        
+
+      <mat-divider></mat-divider>
+          <mat-list-item>
+              <p class="meal_name">Dinner:</p> <span> <mat-icon mat-list-icon class="add-icon">add</mat-icon></span>
+          </mat-list-item>
+          </mat-list>
+    </mat-expansion-panel>
+
+  </mat-accordion>

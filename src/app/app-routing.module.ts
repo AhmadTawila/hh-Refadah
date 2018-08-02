@@ -13,6 +13,10 @@ const routes: Routes = [  {
 {
   path: 'AllMeals',
   loadChildren: './all-meals/all-meals.module#AllMealsModule'
+},
+{
+  path: 'personMeals',
+  loadChildren: './person-meals/person-meals.module#PersonMealsModule'
 }
 ];
 
