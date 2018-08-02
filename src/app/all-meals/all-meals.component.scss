@@ -1,9 +1,60 @@
+
 .form-card{
     width: 80%;
     margin-left: 10%;
     margin-top: 30px;
+    margin-bottom: 37px;
 }
-.mat-form-field-appearance-legacy .mat-form-field-underline {
-    height: 0px;
-    background-color: white;
+
+.meals_number{
+    width: 142px;
+    margin-top: 10px;
+    color: gray;
+}
+.list-text{
+    width:68%;
+    font-weight: 600;
+}
+.mat-form-field {
+    display: inline-block;
+    position: relative;
+    //text-align: left;
+    text-align: right;
+    width:280px;
+    color: gray;
+
+}
+.done-icon{
+    color: blue;
+    margin-top: -14px;
+    padding-right: 1.5% !important;
+}
+.person-text{
+    font-weight: 600 !important;
+}
+.persons-card{
+    width: 88%;
+    margin-left: 6%;
+    margin-top: 16px;
+    .mat-list{
+        margin-top: -20px;
+    }
+
+}
+.persons-background{
+    background-color: #999999;
+    padding-top: 12px;
+    width: 92%;
+    margin-left: 4%;
+    .title{
+        margin-left: 24px;
+        font-weight: 600;
+        font-size: 20px;
+        /* float: left; */
+    }
+    .right-title{
+        text-align: right;
+        color: white;
+        margin-right:24px; 
+    }
 }
