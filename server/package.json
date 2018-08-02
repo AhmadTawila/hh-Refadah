@@ -1,0 +1,27 @@
+{
+  "name": "meals-server",
+  "version": "1.0.0",
+  "description": "meals server",
+  "main": "angular.min.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.1",
+    "express": "^4.15.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node meals-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "fff"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "asmaa",
+  "license": "ISC"
+}

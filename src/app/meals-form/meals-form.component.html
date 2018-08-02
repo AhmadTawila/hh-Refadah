@@ -1,0 +1,100 @@
+<h2 class="title" style="text-align: center; margin-bottom: 30px;">
+  وجبات الحج
+</h2>
+
+
+<form [formGroup]="maealsForm" novalidate (ngSubmit)="save()">
+  <div class="row">
+    <div class="col-6">
+    <div class="form-group">
+        <label>
+            : الإفطار
+          </label>
+        <input class="form-control"  formControlName="breakfast" type="text"  [(ngModel)]="fullMeals.breakfast">
+    </div>
+    <div *ngIf="maealsForm.controls.breakfast.invalid && (maealsForm.controls.breakfast.dirty || maealsForm.controls.breakfast.touched)" class="alert alert-danger">
+        <div *ngIf="maealsForm.controls.breakfast.errors.required">
+          This Field is required.
+        </div>
+    </div>
+  </div>
+    <!--angular2-date-picker class="form-control"  formControlName="breakfastDate" [(ngModel)]="fullMeals.breakfastDate" [settings]="settings"></angular2-date-picker-->
+    <div class="col-6">
+    <div class="form-group">
+        <label>
+            : الموعد
+          </label>
+      <input class="form-control"  formControlName="breakfastDate" [(ngModel)]="fullMeals.breakfastDate"  type="time">
+    </div>
+  </div>
+  </div>
+
+  <div class="row">
+      <div class="col-6">
+    <div class="form-group">
+        <label>
+            : الغداء
+          </label>
+        <input class="form-control"  formControlName="launch" type="text"  [(ngModel)]="fullMeals.launch">
+    </div>
+    <div *ngIf="maealsForm.controls.launch.invalid && (maealsForm.controls.launch.dirty || maealsForm.controls.launch.touched)" class="alert alert-danger">
+        <div *ngIf="maealsForm.controls.launch.errors.required">
+          This Field is required.
+        </div>
+    </div>
+    </div>
+    <div class="col-6">
+    <div class="form-group">
+        <label>
+            : الموعد
+          </label>
+        <input class="form-control"  formControlName="launchDate" [(ngModel)]="fullMeals.launchDate"  type="time">
+      </div>
+    </div>
+  </div>
+    <!--angular2-date-picker [(ngModel)]="fullMeals.launchDate" [settings]="settings"></angular2-date-picker-->
+    <div class="row">
+        <div class="col-6">
+    <div class="form-group">
+        <label>
+            : العشاء
+          </label>
+          <input class="form-control"  formControlName="dinner" type="text"  [(ngModel)]="fullMeals.dinner">
+        </div>
+        <div *ngIf="maealsForm.controls.dinner.invalid && (maealsForm.controls.dinner.dirty || maealsForm.controls.dinner.touched)" class="alert alert-danger">
+            <div *ngIf="maealsForm.controls.dinner.errors.required">
+              This Field is required.
+            </div>
+        </div>
+  </div>
+   <!--angular2-date-picker [(ngModel)]="fullMeals.dinnerDate" [settings]="settings"></angular2-date-picker-->
+   <div class="col-6">
+   <div class="form-group">
+      <label>
+          : الموعد
+        </label>
+      <input class="form-control"  formControlName="dinnerDate" [(ngModel)]="fullMeals.dinnerDate"  type="time">
+    </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-6">
+<div class="form-group" >
+  <label>
+    :عدد الأفراد
+  </label>
+  <input class="form-control" formControlName="numberOfPersons"   type="number"  [(ngModel)]="fullMeals.personsNumber">
+</div>
+<div *ngIf="maealsForm.controls.numberOfPersons.invalid && (maealsForm.controls.numberOfPersons.dirty || maealsForm.controls.numberOfPersons.touched)" class="alert alert-danger">
+    <div *ngIf="maealsForm.controls.numberOfPersons.errors.required">
+    This field is required
+  </div>
+</div>
+</div>
+</div>
+
+<button id="btn-style"  type="submit" [disabled]="maealsForm.invalid" class="btn btn-primary btn-lg">تسجيل</button>
+
+  
+
+</form>

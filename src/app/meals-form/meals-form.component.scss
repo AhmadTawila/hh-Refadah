@@ -1,0 +1,26 @@
+.form-group {
+    margin-bottom: 1rem;
+    text-align: right;
+}
+.form-control{
+    text-align: right;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    text-align: center;
+    width: 20%;
+    margin-left: 40%;
+}
+label{
+    width: 100px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row-reverse;
+    margin: auto;
+}
