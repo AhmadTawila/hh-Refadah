@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [  {
   path: '',
-  redirectTo: 'add-meals',
+  redirectTo: 'AllMeals',
   pathMatch: 'full'
 },
 {

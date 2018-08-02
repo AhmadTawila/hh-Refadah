@@ -11,6 +11,12 @@ import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE, SatDatepickerModule } from 'saturn-datepicker'
 //import { MAT_MOMENT_DATE_FORMATS, MomentDateAdapter } from '@angular/material-moment-adapter'
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -25,6 +31,12 @@ import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE, SatDatepickerModule } f
     AngularDateTimePickerModule,
     BrowserAnimationsModule,
     SatDatepickerModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatListModule,
+    MatDividerModule,
+    MatInputModule,
+    MatIconModule,
     Ng4LoadingSpinnerModule.forRoot() 
   ],
   providers: [

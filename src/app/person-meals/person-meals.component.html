@@ -1,9 +1,10 @@
+<div class="contain">
 <mat-card class="form-card">
     <form class="form-group">
       <mat-list>
       <mat-list-item >
           <mat-icon mat-list-icon>person</mat-icon>
-          <h4 mat-line  class="person-text">Mohammad Aboali</h4>
+          <h4 mat-line  class="person-text">Ahmed Ali</h4>
           <p class="meals_number">0 / 30 meals</p>
           
         </mat-list-item>
@@ -44,9 +45,9 @@
       </mat-list>
      </form>
 </mat-card>
-<mat-accordion *ngFor="let day of days">
+<mat-accordion *ngFor="let day of days" >
     <mat-expansion-panel hideToggle="true" class="expansion-card"  (opened)="panelOpenState = true"
-    (closed)="panelOpenState = false">
+    (closed)="panelOpenState = false" multi="false">
       <mat-expansion-panel-header class="panel-header">
         <mat-panel-title class="panel-title">
           {{day}}
@@ -78,3 +79,4 @@
     </mat-expansion-panel>
 
   </mat-accordion>
+</div>

@@ -1,6 +1,60 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="contain">
+<nav class="navbar navbar-light bg-light justify-content-between">
+    <span><mat-icon class="nav-icon" mat-list-icon>person</mat-icon></span><a class="navbar-brand">Group Organizer</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <!--button class="btn my-2 my-sm-0" type="submit">Search</button-->
+    </form>
+  </nav>
+<mat-sidenav-container class="example-container">
+        <mat-sidenav mode="side" opened>
+            <mat-list>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>person</mat-icon>Meals Plans
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> <mat-icon mat-list-icon>person</mat-icon> Next Meals
+                  
+    
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> <mat-icon mat-list-icon>person</mat-icon> Previous Meals
+    
+                    </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> <mat-icon mat-list-icon></mat-icon>
+                    <div class="border-class"></div>
+                </mat-list-item>
+                 <mat-divider></mat-divider>
+                <mat-list-item> <mat-icon mat-list-icon>person</mat-icon> Notification        
+    
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>  <mat-icon mat-list-icon>person</mat-icon>Reports         
+    
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>  <mat-icon mat-list-icon>person</mat-icon>Logs       
+    
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>  <mat-icon mat-list-icon>person</mat-icon>Support    
+    
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>  <mat-icon mat-list-icon>person</mat-icon>Settings        
+    
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>  <mat-icon mat-list-icon>person</mat-icon>Improve Refada       
+    
+                </mat-list-item>
+                <mat-divider></mat-divider>
+              </mat-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
 <router-outlet></router-outlet>
-</div>
+        </mat-sidenav-content>
+        </mat-sidenav-container>
 <ng4-loading-spinner> </ng4-loading-spinner>
 

@@ -53,15 +53,15 @@
   </div>
 </div>
 <mat-card class="persons-card">
-  <mat-list>
-      <mat-list-item *ngFor="let person of persons">
-          <mat-icon mat-list-icon>person</mat-icon>
+  <mat-nav-list>
+      <a mat-list-item *ngFor="let person of persons" href="#/personMeals">
+        <mat-icon mat-list-icon>person</mat-icon>
           <h4 mat-line  class="person-text">{{person}}</h4>
-          <p class="meals_number">0 / 30 meals</p>
+          <p class="meals_number">0 / 30 meals</p> 
           <mat-divider></mat-divider>
-        </mat-list-item>
+      </a>
         
-  </mat-list>
+  </mat-nav-list>
 
 </mat-card>
 </div>
